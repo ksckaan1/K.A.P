@@ -1,0 +1,670 @@
+/* Tüm mouse Görünüşleri*/
+*{
+	cursor: default;
+}
+input{
+	cursor: text;
+}
+
+/*SVG bulunduğu alanı kaplasın*/
+svg{
+	width: 100% !important;
+	height: 100% !important;
+}
+
+/*Yüklenme çubuğu*/
+#loadingBar{
+	position: fixed;
+	top: 0px;
+	width: 0px;
+	height: 5px;
+	background: #800080;
+	box-shadow: 2px 2px 20px #800080;
+	color: white;
+	text-align: right;
+	overflow: hidden;
+	display: none;
+	z-index: 10000000;
+	margin: 0px;
+	padding: 0px;
+}
+
+/*Şifre girme alanı*/
+#auth{
+	height: 50px;
+}
+#auth *{
+	padding: 0px;
+	margin: 0px;
+}
+#sifreGiris{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	border: 1px solid #000000;
+	border-radius: 10px;
+	background: #181B28;
+	color: white;
+	font-size: 20px;
+	padding: 0px 10px 0px 10px !important;
+	text-align: center;
+}
+body{
+	display: none;
+	background: #171723;
+	color: white;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+	user-select: none;
+}
+#yuklenme{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 800px;
+	height: 600px;
+	z-index: 100000;
+	background: #0C0E14;
+	color: white;
+	display: block;
+	cursor: default;
+}
+#logo img{
+	width: 80%;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+}
+#logo img:hover{
+	transform: rotateX(360deg);
+	-webkit-transform: rotateX(360deg);
+}
+#yuklenmeLogo{
+	position: absolute;
+	top:200px;
+	left: 250px;
+	text-align: center;
+	width: 300px;
+}
+#yuklenmeLogo img{
+	width: 200px;
+	margin: auto;
+}
+#menu{
+	text-align:center;
+	background: #0C0E14;
+	color: white;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 200px;
+	height: 600px;
+	
+}
+#menu button{
+	display: block;
+	width: 180px;
+	margin: auto;
+	background: #171723;
+	color: white;
+	border: 1px solid #0C0E14;
+    transition: background 1s;
+	-webkit-transition: background 1s;
+}
+#menu button:hover{
+	background: #800080;
+}
+#ekle{
+	border-radius: 10px 10px 0px 0px;
+}
+#cikis{
+	border-radius: 0px 0px 10px 10px;
+}
+#sayfa{
+	display:none;
+	color: white;
+	position: absolute;
+	left: 200px;
+	top: 0px;
+	width: 600px;
+	height: 600px;
+	padding: 0px;
+	overflow: hidden;
+}
+#kayitlar{
+	display:block;
+	color: white;
+	position: absolute;
+	left: 200px;
+	top: 0px;
+	width: 600px;
+	height: 540px;
+	padding: 55px 0px 0px 0px;
+	overflow: auto;
+}
+#isimalani{
+	background: -webkit-linear-gradient(rgb(76,1,76), rgb(128,0,128));
+	display: block;
+	padding: 10px;
+	height: 100px;
+	overflow: hidden;
+}
+#yazialani{
+	background: #282A33;
+	color: white;
+	display: block;
+	width: 600px;
+	height: 460px;
+	overflow: auto;
+	padding: 10px;
+	-webkit-touch-callout: auto;
+    -webkit-user-select: auto;
+    -khtml-user-select: auto;
+    -moz-user-select: auto;
+    -ms-user-select: auto;
+    user-select: auto;
+}
+#tspan10{
+	margin-left:20px;
+	text-align: center;
+}
+#profilresmi{
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 10px;
+}
+#buyukresim{
+	position:fixed;
+	bottom: 0px;
+	right: 100px;
+	width: 400px;
+	height: 400px;
+	z-index: 1000;
+	display: none;
+	overflow: hidden;
+	border-radius: 20px 20px 0px 0px;
+	padding: 0px;
+	background: white;
+}
+#isimbilgi{
+	display: inline-block;
+	padding-left: 10px;
+	position: absolute;
+	top: 0px;
+	height: 70px;
+	width: 480px;
+}
+#isimaciklama{
+	position: absolute;
+	top: 55px;
+	left: 10px;
+	display: block;
+	width:100%;
+}
+#anahtar{
+	padding: 0px;
+	margin: 0px;
+	position: absolute;
+	top: 80px;
+	left:10px;
+	display: block;
+	width: 60px;
+	height: 31px;
+	border: 1px solid white;
+	background: white;
+	color: white;
+	border-radius: 15px;
+}
+#kilit{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	margin: 0px;
+	padding: 0px;
+	background: #800080;
+	color: white;
+	width: 30px;
+	height: 30px;
+	 border: 1px solid white; 
+	 border-radius: 15px;
+}
+#aramakutusu{
+	border: 0px;
+	border-radius: 10px 0px 0px 10px;
+	width: 513px;
+	font-size: 25px;
+	background: #282A33;
+	color: white;
+	text-align: center;
+	position: fixed;
+	top: 8px;
+	left: 210px;
+}
+#aramayap{
+	position: fixed;
+	border: 0px;
+	border-radius: 0px;
+	right: 45px;
+	top: 10px;
+	width: 30px;
+	height: 36px;
+	background: #282A33;
+    color: white;
+    transition: all 1s;
+	-webkit-transition: all 1s;
+}
+#aramayap:hover{
+	background: #800080;
+}
+#aramatemizle{
+	position: fixed;
+	border: 0px;
+	border-radius: 0px 10px 10px 0px;
+	right: 15px;
+	top: 10px;
+	width: 30px;
+	height: 36px;
+	background: #282A33;
+    color: white;
+    transition: all 1s;
+	-webkit-transition: all 1s;
+}
+#aramatemizle:hover{
+	background: #800080;
+}
+#arama{
+	background: #0C0E14;
+	color: white;
+	position: fixed;
+	top: 0px;
+	left: 200px;
+	width: 600px;
+	height: 55px;
+}
+.listekayit{
+	width: 584px;
+	padding: 8px;
+	font-size: 25px;
+	cursor: pointer;
+    transition: all 1s;
+	-webkit-transition: all 1s;
+}
+.listekayit:hover{
+	background: #800080;
+}
+#duzenlebtn{
+	border-radius: 10px 0px 0px 10px;
+	position: absolute;
+	right: 50px;
+	top: 90px;
+	display: block;
+	width: 80px;
+	margin: auto;
+	background: green;
+	color: white;
+	border: 1px solid #0C0E14;
+    transition: background 1s;
+	-webkit-transition: background 1s;
+}
+#duzenlebtn:hover{
+	background: #800080;
+}
+#silbtn{
+	position: absolute;
+	right: 0px;
+	top: 90px;
+	display: block;
+	width: 50px;
+	margin: auto;
+	background: red;
+	color: white;
+    border: 1px solid #0C0E14;
+    transition: background 1s;
+	-webkit-transition: background 1s;
+}
+#silbtn:hover{
+	background: #800080;
+}
+#idbolumu{
+	position: absolute;
+	top: 93px;
+	right: 135px;
+}
+#duzenlepencere{
+	display:none;
+	position: fixed;
+	width: 580px;
+	height: 580px;
+	top:0px;
+	right: 0px;
+	z-index: 10000;
+	background: #171723;
+	color: white;
+	padding: 10px;
+}
+#duzenlesvg{
+	display:block;
+	margin: auto;
+	width: 200px;
+}
+#duzenleiptal{
+	background: red;
+	border: 1px solid #0C0E14;
+	color:white;
+	width: 80px;
+	height: 30px;
+	font-weight: bold;
+	position:absolute;
+	right: 10px;
+	top: 0px;
+    transition: background 1s;
+	-webkit-transition: background 1s;
+}
+#duzenleiptal:hover{
+	background: #800080;
+}
+#duzenlesifirla{
+	background: orange;
+	border: 1px solid #0C0E14;
+	color:white;
+	width: 80px;
+	height: 30px;
+	font-weight: bold;
+	position:absolute;
+	right: 10px;
+	top: 30px;
+    transition: background 1s;
+	-webkit-transition: background 1s;
+}
+#duzenlesifirla:hover{
+	background: #800080;
+}
+#duzenlekaydet{
+	background: green;
+	border: 1px solid #0C0E14;
+	color:white;
+	width: 80px;
+	height: 30px;
+	font-weight: bold;
+	position:absolute;
+	right: 10px;
+	top: 60px;
+    border-radius: 0px 0px 10px 10px;
+    transition: background 1s;
+	-webkit-transition: background 1s;
+}
+#duzenlekaydet:hover{
+	background: #800080;
+}
+#duzenleresim{
+	padding: 10px;
+	width: 560px;
+	color: white;
+	background: #282A33;
+	height: 50px;
+	border-radius: 10px;
+	border: 1px solid #0C0E14;
+}
+#duzenleisim{
+	padding: 10px;
+	width: 560px;
+	color: white;
+	background: #282A33;
+	border-radius: 10px;
+	border: 1px solid #0C0E14;
+}
+#duzenleekresim{
+	padding: 10px;
+	width: 560px;
+	color: white;
+	background: #282A33;
+	border-radius: 10px;
+	border: 1px solid #0C0E14;
+}
+#duzenlehk{
+	font-size: 20px;
+	padding: 10px;
+	width: 560px;
+	height: 240px;
+	color: white;
+	background: #282A33;
+	border-radius: 10px;
+	border: 1px solid #0C0E14;
+}
+
+
+
+
+
+
+
+
+#kayitekle{
+	padding: 10px;
+	display:none;
+	color: white;
+	position: absolute;
+	left: 200px;
+	top: 0px;
+	width: 580px;
+	height: 580px;
+	overflow: hidden;
+	z-index: 1000;
+}
+#ekleiptal{
+	background: red;
+	border: 1px solid #0C0E14;
+	color:white;
+	width: 80px;
+	height: 30px;
+	font-weight: bold;
+	position:absolute;
+	right: 10px;
+	top: 0px;
+    transition: background 1s;
+	-webkit-transition: background 1s;
+}
+#ekleiptal:hover{
+	background: #800080;
+}
+#eklekaydet{
+	background: green;
+	border: 1px solid #0C0E14;
+	color:white;
+	width: 80px;
+	height: 30px;
+	font-weight: bold;
+	position:absolute;
+	right: 10px;
+	top: 30px;
+	border-radius: 0px 0px 10px 10px;
+    transition: background 1s;
+	-webkit-transition: background 1s;
+}
+#eklekaydet:hover{
+	background: #800080;
+}
+#ekleresim{
+	padding: 10px;
+	width: 560px;
+	color: white;
+	background: #282A33;
+	height: 50px;
+	border-radius: 10px;
+	border: 1px solid #0C0E14;
+}
+#ekleekresim{
+	padding: 10px;
+	width: 560px;
+	color: white;
+	background: #282A33;
+	border-radius: 10px;
+	border: 1px solid #0C0E14;
+}
+#ekleisim{
+	padding: 10px;
+	width: 560px;
+	color: white;
+	background: #282A33;
+	border-radius: 10px;
+	border: 1px solid #0C0E14;
+}
+#eklehk{
+	font-size: 20px;
+	padding: 10px;
+	width: 560px;
+	height: 240px;
+	color: white;
+	background: #282A33;
+	border-radius: 10px;
+	border: 1px solid #0C0E14;
+}
+#uyari{
+	border-radius: 10px;
+	text-align: center;
+	display: none;
+	position: fixed;
+	width: 400px;
+	padding: 10px;
+	border: 2px solid white;
+	color: white;
+	background: red;
+	font-size: 15px;
+	font-weight: bold;
+	margin:10px;
+	bottom: 0px;
+	right: 0px;
+	z-index: 10000000;
+}
+#onay{
+	border-radius: 10px;
+	text-align: center;
+	display: none;
+	position: fixed;
+	width: 400px;
+	padding: 10px;
+	border: 2px solid white;
+	color: white;
+	background: green;
+	font-size: 15px;
+	font-weight: bold;
+	margin:10px;
+	bottom: 0px;
+	right: 0px;
+	z-index: 10000000;
+}
+.versiyon{
+	z-index: 10000;
+	position: fixed;
+	left: 5px;
+	bottom: 5px;
+	color: white;
+}
+button{
+	cursor: pointer;
+	font-weight: bold;
+}
+.belirgin{
+	color: yellow;
+	font-weight: bold;
+	font-size: 20px;
+}
+#resimalani{
+	background: #282A33;
+	color: white;
+	display: none;
+	width: 600px;
+	height: 460px;
+	overflow: auto;
+	padding: 10px;
+}
+
+#resimalani svg{
+	height: auto !important;
+	width: 580px !important;
+}
+
+
+#resimekle{
+	padding: 10px;
+	display:none;
+	color: white;
+	position: absolute;
+	left: 200px;
+	top: 0px;
+	width: 580px;
+	height: 580px;
+	overflow: hidden;
+	z-index: 1000;
+}
+#resimiptal{
+	background: red;
+	border: 1px solid #0C0E14;
+	color:white;
+	width: 80px;
+	height: 30px;
+	font-weight: bold;
+	position:absolute;
+	right: 10px;
+	top: 0px;
+    transition: background 1s;
+	-webkit-transition: background 1s;
+}
+#resimiptal:hover{
+	background: #800080;
+}
+#resimkaydet{
+	background: green;
+	border: 1px solid #0C0E14;
+	color:white;
+	width: 80px;
+	height: 30px;
+	font-weight: bold;
+	position:absolute;
+	right: 10px;
+	top: 30px;
+	border-radius: 0px 0px 10px 10px;
+    transition: background 1s;
+	-webkit-transition: background 1s;
+}
+#resimkaydet:hover{
+	background: #800080;
+}
+#resimkodu{
+	font-size: 20px;
+	padding: 10px;
+	width: 560px;
+	height: 460px;
+	color: white;
+	background: #282A33;
+	border-radius: 10px;
+	border: 1px solid #0C0E14;
+}
+#komutcerceve{
+	display: none;
+	position:fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background: #000000ea;
+	z-index:1000;
+	text-align: center;
+	color: white;
+}
+#komutsatiri{
+	margin-top: 20px;
+	background: #0C0E14;
+	color: white;
+	border: 1px solid black;
+	border-radius: 10px;
+	font-size: 20px;
+	width: 400px;
+	padding-left: 10px;
+	padding-right: 10px;
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="./typed.js"></script>
+    <title>K.A.P</title>
+</head>
+
+<body>
+    <style>
+        body {
+            display: none;
+        }
+    </style>
+    <div id="loadingBar"></div>
+    <div id="menu">
+        <div id="logo"><img src="./kaplogo.png" /></div>
+        <button id="ekle">Kayıt Ekle</button>        
+        <button id="liste">Liste</button>        
+        <button id="resimeklebtn">Resim Ekle</button>
+        <button id="cikis">Programdan Çık</button>
+    </div>
+
+
+
+    <div id="yuklenme">
+        <div id="yuklenmeLogo">
+            <img src="./kaplogo.png" /><br/>
+            <span id="launchtext"></span>
+            <div id="auth"><input id="sifreGiris" type="password"></input></div>
+        </div>
+        <span class="versiyon">versiyon</span>
+
+    </div>
+
+    <div id="sayfa">
+        <div id="profil">
+            <div id="isimalani">
+                <div id="profilresmi">Profil Resmi Yok</div>
+                <div id="isimbilgi">
+
+
+                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
+                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="100%" height="100%"
+                        viewBox="0 0 158.75 15.345843" version="1.1" id="isimsvg" sodipodi:docname="isim.svg"
+                        inkscape:version="0.92.4 5da689c313, 2019-01-14">
+                        <defs id="defs2">
+                            <filter inkscape:label="Organic" inkscape:menu="Textures"
+                                inkscape:menu-tooltip="Bulging, knotty, slick 3D surface"
+                                style="color-interpolation-filters:sRGB" id="filter427">
+                                <feTurbulence numOctaves="3" baseFrequency="0.037" result="result0"
+                                    id="feTurbulence411" />
+                                <feSpecularLighting specularExponent="24.29999924" surfaceScale="2" specularConstant="1"
+                                    result="result1" id="feSpecularLighting415">
+                                    <feDistantLight elevation="45" azimuth="225" id="feDistantLight413" />
+                                </feSpecularLighting>
+                                <feDiffuseLighting in="result0" surfaceScale="3" diffuseConstant="1.21000004"
+                                    id="feDiffuseLighting419">
+                                    <feDistantLight azimuth="225" elevation="42" id="feDistantLight417" />
+                                </feDiffuseLighting>
+                                <feBlend in2="SourceGraphic" mode="multiply" result="result91" id="feBlend421" />
+                                <feComposite operator="arithmetic" in="result1" k2="1" k3="1" in2="result91"
+                                    id="feComposite423" k1="0" k4="0" />
+                                <feComposite in2="SourceAlpha" operator="in" result="result2" id="feComposite425" />
+                            </filter>
+                        </defs>
+                        <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0"
+                            inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="1.1040257"
+                            inkscape:cx="338.22148" inkscape:cy="126.97592" inkscape:document-units="mm"
+                            inkscape:current-layer="layer1" showgrid="false" units="px" inkscape:window-width="1366"
+                            inkscape:window-height="716" inkscape:window-x="0" inkscape:window-y="22"
+                            inkscape:window-maximized="1" />
+                        <metadata id="metadata5">
+                            <rdf:RDF>
+                                <cc:Work rdf:about="">
+                                    <dc:format>image/svg+xml</dc:format>
+                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                    <dc:title></dc:title>
+                                </cc:Work>
+                            </rdf:RDF>
+                        </metadata>
+                        <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1"
+                            transform="translate(0,-281.65403)">
+                            <text xml:space="preserve"
+                                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:'Schumacher Clean Wide';-inkscape-font-specification:'Schumacher Clean Wide';letter-spacing:0px;word-spacing:0px;fill:#ff00ff;fill-opacity:1;stroke:none;stroke-width:0.26458332;filter:url(#filter427)"
+                                x="-0.23965299" y="293.88452" id="text12">
+                                <tspan sodipodi:role="line" id="tspan10" x="-0.23965299" y="293.88452"
+                                    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.28888893px;font-family:'Schumacher Clean Wide';-inkscape-font-specification:'Schumacher Clean Wide';fill:#ff00ff;stroke-width:0.26458332">
+                                    Buraya İsim Soyisim Gelecek</tspan>
+                            </text>
+                        </g>
+                    </svg>
+
+
+
+
+                    <span id="isimaciklama">Adlı kayda ait bilgileri görüyorsunuz.</span>
+                    <div id="anahtar">
+                        <div id="kilit"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="buyukresim"></div>
+            <div id="idbolumu">ID #<span id="profilid"></span></div>
+            <button id="duzenlebtn">Düzenle</button><button id="silbtn">Sil</button>
+            <div id="yazialani">
+
+                hakkında yazılar bu tarafa gelecek
+            </div>
+            <div id="resimalani">Buraya resimler gelecek</div>
+            <div id="duzenlepencere">
+                <button id="duzenleiptal">İptal</button>
+                <button id="duzenlesifirla">Sıfırla</button>
+                <button id="duzenlekaydet">Kaydet</button>
+                <center>
+                    <div id="duzenlesvg">
+                        <h1>Düzenle</h1>
+                    </div>
+                </center>Kayıt İsmi:
+                <input id="duzenleisim" type="text"></input>
+                Profil Resmi SVG Kodu:
+                <textarea id="duzenleresim"></textarea>
+                Ek resimlerin id'leri:
+                <input id="duzenleekresim" type="text"></input>
+                Kayıt Hakkında Bilgiler:
+                <textarea id="duzenlehk"></textarea>
+
+            </div>
+        </div>
+        </span>
+    </div>
+    <div id="kayitlar">
+        <div id="arama">
+            <input id="aramakutusu" type="text"></input>
+            <button id="aramayap"><svg style="height:1em;" viewBox="0 0 12 13">
+                    <g stroke-width="2" stroke="#999999" fill="none">
+                        <path d="M11.29 11.71l-4-4" />
+                        <circle cx="5" cy="5" r="4" />
+                    </g>
+                </svg></button>
+            <button id="aramatemizle">X</button>
+        </div>
+        <div id="kayitlistesi"></div>
+    </div>
+
+
+    <div id="kayitekle">
+        <button id="ekleiptal">İptal</button>
+        <button id="eklekaydet">Kaydet</button>
+        <center>
+            <div id="duzenlesvg">
+                <h1>Kayıt Ekle</h1>
+            </div>
+        </center>Kayıt İsmi:
+        <input id="ekleisim" type="text"></input>Profil Resmi SVG Kodu:
+        <textarea id="ekleresim"></textarea>
+        Ek resimlerin id'leri:
+        <input id="ekleekresim" type="text"></input>
+        Kayıt Hakkında Bilgiler:
+        <textarea id="eklehk"></textarea>
+    </div>
+
+    <div id="resimekle">
+        <button id="resimiptal">İptal</button>
+        <button id="resimkaydet">Kaydet</button>
+        <center>
+            <div id="duzenlesvg">
+                <h1>Resim Ekle</h1>
+            </div>
+        </center>SVG Kodu:
+        <textarea id="resimkodu"></textarea>
+    </div>
+
+
+    <div id="uyari">Burada Uyarı Mesajı Görüntülenir</div>
+    <div id="onay">Burada Onaylanma Mesajı Görüntülenir</div>
+    <span class="versiyon">versiyon</span>
+    <div id="komutcerceve"><input type="text" id="komutsatiri"></input></div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
